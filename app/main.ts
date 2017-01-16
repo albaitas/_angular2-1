@@ -6,11 +6,17 @@ import{platformBrowserDynamic} from '@angular/platform-browser-dynamic';    // d
     selector: 'hello-angular', // bûsimo tego pavadinimas
     template: `
       <div>
-        Hello Angular 2
+        Hello {{name}}
       </div>
     `
 })
-class HelloAngular {}         // klasës pavadinimas
+class HelloAngular {
+    name: string;
+
+    constructor(){
+        this.name = "Jonas";
+    }
+}
 
 @NgModule({
     imports: [BrowserModule],      // importuoti kità modulá
