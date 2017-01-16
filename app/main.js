@@ -8,19 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core"); // importuojame komponent� ir modul�
-var platform_browser_1 = require("@angular/platform-browser"); // naudosime brauseryje
-var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic"); // dinami�kai paleisime brauseryje
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
 var HelloAngular = (function () {
     function HelloAngular() {
-        this.name = "Jonas";
+        this.names = ["Jonas", "Petras", "Linas", "Rytis"];
     }
     return HelloAngular;
 }());
 HelloAngular = __decorate([
     core_1.Component({
         selector: 'hello-angular',
-        template: "\n      <div>\n        Hello {{name}}\n      </div>\n    "
+        template: "\n      <ul>\n       <li *ngFor=\"let name of names\">Hello {{name}}</li>\n      </ul>\n    "
     }),
     __metadata("design:paramtypes", [])
 ], HelloAngular);
@@ -33,7 +33,7 @@ HelloAngularAppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
         declarations: [HelloAngular],
-        bootstrap: [HelloAngular] // paleid�iame bootstrape
+        bootstrap: [HelloAngular]
     })
 ], HelloAngularAppModule);
 platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(HelloAngularAppModule);

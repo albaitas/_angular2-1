@@ -1,27 +1,27 @@
-import{Component, NgModule} from '@angular/core';          // importuojame komponentà ir modulá
-import{BrowserModule} from '@angular/platform-browser';   // naudosime brauseryje
-import{platformBrowserDynamic} from '@angular/platform-browser-dynamic';    // dinamiðkai paleisime brauseryje
+import{Component, NgModule} from '@angular/core';
+import{BrowserModule} from '@angular/platform-browser';
+import{platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
-@Component({                   // komponentas ir klase
-    selector: 'hello-angular', // bûsimo tego pavadinimas
+@Component({
+    selector: 'hello-angular',   //* pakeicia DOM struktura(ciklas for)
     template: `
-      <div>
-        Hello {{name}}
-      </div>
+      <ul>
+       <li *ngFor="let name of names">Hello {{name}}</li>
+      </ul>
     `
 })
 class HelloAngular {
-    name: string;
+    names: string[];
 
     constructor(){
-        this.name = "Jonas";
+        this.names = ["Jonas", "Petras", "Linas", "Rytis"];
     }
 }
 
 @NgModule({
-    imports: [BrowserModule],      // importuoti kità modulá
-    declarations: [HelloAngular],  // paskelbiame komponentà
-    bootstrap: [HelloAngular]      // paleidþiame bootstrape
+    imports: [BrowserModule],
+    declarations: [HelloAngular],
+    bootstrap: [HelloAngular]
 })
 class HelloAngularAppModule {}
 
