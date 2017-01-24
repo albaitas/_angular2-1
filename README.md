@@ -1,17 +1,9 @@
-# Angular 2
+Our First Application(const)
 
-## Priklausomybės
-Turi būti įdiegtas node.js, nes naudojame `npm` priklausomybes
+    Hello Jonas
+    Hello Petras
+    Hello Linas
+    Hello Romas
 
-## Paleidimas
-Nustatome visas priklausomybes:
 
-npm install
-
-Kompiliuosime TypeScript kodą
-Paleisime lokalų serverį su mūsų projektu
-
-npm run go
-
-Surenkame nuorodą brauzeryje http://localhost:3000
 
