@@ -1,18 +1,7 @@
-import {Component} from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'hello-angular',
-    template: `
-      <ul>
-       <li *ngFor="let name of names">Hello {{name}}</li>
-      </ul>
-    `
+    selector: "my-app", 
+    templateUrl: "app/app.component.html"
 })
-export class AppComponent {
-    names: string[];
-
-    constructor(){
-        this.names = ["Jonas", "Petras", "Linas", "Romas"];
-    }
-}
-
+export class AppComponent {}

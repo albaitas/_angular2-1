@@ -1,17 +1,18 @@
-# Angular 2
+Hello World list
 
-## Priklausomybės
-Turi būti įdiegtas node.js, nes naudojame `npm` priklausomybes
+    Hello World
+    Привет Мир
+    Привіт Світ
+    Hola Mundo
+    Bonjour le monde
+    Hallo Welt
+    Ciao mondo
+    Witaj świecie
+    Hej världen
+    Pozdravljen, svet
+    Прывітанне Сусвет
 
-## Paleidimas
-Nustatome visas priklausomybes:
+Selected Language : German
 
-npm install
 
-Kompiliuosime TypeScript kodą
-Paleisime lokalų serverį su mūsų projektu
-
-npm run go
-
-Surenkame nuorodą brauzeryje http://localhost:3000
 
