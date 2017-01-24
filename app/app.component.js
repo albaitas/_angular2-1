@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var HelloAngular = (function () {
-    function HelloAngular() {
+var AppComponent = (function () {
+    function AppComponent() {
         this.names = ["Jonas", "Petras", "Linas", "Romas"];
     }
-    return HelloAngular;
+    return AppComponent;
 }());
-HelloAngular = __decorate([
+AppComponent = __decorate([
     core_1.Component({
         selector: 'hello-angular',
         template: "\n      <ul>\n       <li *ngFor=\"let name of names\">Hello {{name}}</li>\n      </ul>\n    "
     }),
     __metadata("design:paramtypes", [])
-], HelloAngular);
-exports.HelloAngular = HelloAngular;
+], AppComponent);
+exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

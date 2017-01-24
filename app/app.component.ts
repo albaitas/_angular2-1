@@ -8,7 +8,7 @@ import {Component} from '@angular/core';
       </ul>
     `
 })
-export class HelloAngular {
+export class AppComponent {
     names: string[];
 
     constructor(){
